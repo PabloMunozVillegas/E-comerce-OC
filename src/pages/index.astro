@@ -1,5 +1,10 @@
 ---
-
+import Navbar from './components/navbar.astro'
+import NavbarInfo from './components/navbarInfo.astro'
+import { Image } from 'astro:assets';
+import Portada from '../../public/portadaOpticentro.png'
+import Banner from './components/banner.astro'
+import Video from './components/video.astro'
 ---
 
 <html lang="en">
@@ -11,6 +16,10 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Image src={Portada} alt=''/>
+		<Navbar/>
+		<NavbarInfo/>
+		<Banner/>	
+		<Video>
 	</body>
 </html>
